@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+     <meta http-equiv="content-type"
+		   content="text/html;
+					charset=UTF-8">
+		<link rel="stylesheet" href="vierkant.css">
+		<title>totaalbedrag</title>
+    </head> 
+   <body>
+		<h3> vierkant</h3>
+	   <div id="blok">
+	   
+	Breedte: <input id="Breedte"/><br/><br/>
+
+    Hoogte: <input id=" Hoogte"/><br/><br/>
+
+     <button onclick="toon();">Toon</button>
+	   
+		    <div id="vierkant"></div>
+      
+	   </div>
+  <script>
+		   
+		  function toon(){
+		
+    var bedrag = document.getElementById("Breedte").value;
+
+    var aantal = document.getElementById("Hoogte").value;
+			
+    
+
+    document.getElementById("vierkant").innerHTML = "Het totaalbedrag is: " + (bedrag * aantal).toFixed(2);
+
+}
+		
+		
+		
+		</script>
+   </body>
+</html>
