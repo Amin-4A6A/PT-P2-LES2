@@ -13,25 +13,26 @@
 	   
 	Breedte: <input id="Breedte"/><br/><br/>
 
-    Hoogte: <input id=" Hoogte"/><br/><br/>
+    Hoogte: <input id="Hoogte"/><br/><br/>
 
      <button onclick="toon();">Toon</button>
 	   
-		    <div id="vierkant"></div>
+		    
       
+	   <div id="blokje">
+		   ddddd
 	   </div>
   <script>
 		   
 		  function toon(){
 		
-    var bedrag = document.getElementById("Breedte").value;
+    var breedte = document.getElementById("Breedte").value;
 
-    var aantal = document.getElementById("Hoogte").value;
+    var hoogte = document.getElementById("Hoogte").value;
 			
-    
-
-    document.getElementById("vierkant").innerHTML = "Het totaalbedrag is: " + (bedrag * aantal).toFixed(2);
-
+     document.getElementById("blokje").style.width = breedte + "px";
+    document.getElementById("blokje").style.height = hoogte + "px";
+			  
 }
 		
 		
